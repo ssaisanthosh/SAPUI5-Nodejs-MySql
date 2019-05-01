@@ -1,0 +1,10 @@
+{
+    "name": "SAPUI5_CRUD",
+    "version": "1.0.0",
+    "description": "Node.js CRUD operation with MariaDB and SAPUI5",
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "express": "^4.16.3",
+        "mysql": "^2.15.0"
+    }
+}

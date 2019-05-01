@@ -1,0 +1,36 @@
+<mvc:View controllerName="Node.controller.View1" 
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" 
+	xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="SAPUI5 with Node.js">
+				<content>
+					<List id="list" sticky="HeaderToolbar" headerText="Attachments" mode="Delete" delete="onDelete" items="{ path: '/todo' }">
+						<headerToolbar>
+							<Toolbar>
+
+								<Text id="header" class="sapUiSmallMargin" text="Todo ( {=${/todo}.length} )"/>
+							</Toolbar>
+						</headerToolbar>
+						<items>
+							<CustomListItem>
+								<HBox>
+									<VBox class="sapUiSmallMarginBeginEnd sapUiSmallMarginTopBottom">
+										<Label text="{todo}"/>
+									</VBox>
+								</HBox>
+							</CustomListItem>
+						</items>
+					</List>
+				</content>
+				<footer>
+					<Toolbar>
+						<Input id="todo" type="Text" placeholder="New Todo"  />
+						<Button text="Save" press="onSave" />
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
